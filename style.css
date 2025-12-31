@@ -1,0 +1,109 @@
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:radial-gradient(circle at top,#141e30,#243b55);
+  font-family:'Segoe UI',sans-serif;
+}
+
+/* Main Card */
+.app{
+  width:380px;
+  padding:26px;
+  border-radius:26px;
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(18px);
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.6),
+    inset 0 0 18px rgba(255,255,255,0.08);
+  color:white;
+}
+
+/* Balance Card */
+.balance{
+  background:linear-gradient(135deg,#00f260,#0575e6);
+  color:black;
+  padding:18px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,0.5);
+}
+
+.balance h1{
+  margin:8px 0 0;
+  font-size:34px;
+}
+
+/* Summary */
+.summary{
+  display:flex;
+  gap:15px;
+  margin:18px 0;
+}
+
+.summary div{
+  flex:1;
+  padding:14px;
+  border-radius:16px;
+  text-align:center;
+  background:rgba(255,255,255,0.12);
+}
+
+.income{border-bottom:4px solid #00ffab;}
+.expense{border-bottom:4px solid #ff4b5c;}
+
+/* Inputs */
+input{
+  width:100%;
+  padding:12px;
+  margin:8px 0;
+  border:none;
+  border-radius:14px;
+  background:rgba(255,255,255,0.15);
+  color:white;
+  outline:none;
+}
+
+/* Button */
+button{
+  width:100%;
+  padding:13px;
+  border:none;
+  border-radius:14px;
+  background:linear-gradient(135deg,#00f260,#0575e6);
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+button:hover{transform:scale(1.04);}
+
+/* History List */
+ul{list-style:none;padding:0;margin-top:10px;}
+
+li{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:10px 0;
+  padding:12px 14px;
+  border-radius:16px;
+  background:rgba(255,255,255,0.15);
+  box-shadow:0 6px 12px rgba(0,0,0,0.4);
+}
+
+li.plus{border-left:6px solid #00ffab;}
+li.minus{border-left:6px solid #ff4b5c;}
+
+li button{
+  width:auto;
+  background:#ff4b5c;
+  color:white;
+  padding:6px 12px;
+  border-radius:10px;
+}
